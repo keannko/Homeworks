@@ -1,0 +1,134 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.favoriteCard {
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  position: relative;
+
+  &__infoBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__price {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 5px;
+  }
+}
+
+.orderTitle {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.orderForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  &__table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 500px;
+  }
+}
+
+.resultBlock {
+  display: grid;
+  grid-template-areas: "first second third fourth fifth";
+  grid-template-columns: 1fr 60px 40px 90px 20px;
+  font-size: 12px;
+  border-top: 1px solid black;
+  padding: 5px;
+  
+
+  &__finTitle {
+    grid-area: first;
+  }
+
+  &__finPcs {
+    grid-area: third;
+  }
+
+  &__finSum {
+    grid-area: fourth;
+  }
+}
+
+.orderInfo {
+  display: grid;
+  grid-template-columns: 1fr 60px 40px 90px 20px;
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  position: relative;
+
+  & input {
+    text-align: center;
+    margin-left: 5px;
+  }
+}
+
+.tableClose {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  right: 0px;
+  top: 0px;
+}
+
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
+
+.close::before,
+.close::after,
+.tableClose::before,
+.tableClose::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 4px;
+  background-color: red;
+}
+
+.close::before,
+.tableClose::before {
+  transform: rotate(45deg);
+}
+
+.close::after,
+.tableClose::after {
+  transform: rotate(-45deg);
+}
+
+
+.backBtn {
+  padding: 10px 20px;
+    margin: 10px 0 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: tomato;
+}

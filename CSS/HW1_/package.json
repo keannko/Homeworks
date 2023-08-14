@@ -1,0 +1,25 @@
+{
+  "name": "project-x",
+  "version": "1.0.0",
+  "description": "Yaroslav_Chaban__fe_11_online",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "eslint": "^8.31.0",
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "moment": "^2.29.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/keannko/chaban-yaroslav.git"
+  }
+}

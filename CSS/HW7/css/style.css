@@ -1,0 +1,362 @@
+@import url('./normalize.css');
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu/Ubuntu-Bold.woff') format('woff'),
+        url('../fonts/Ubuntu/Ubuntu-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+        url('../fonts/Ubuntu/Ubuntu-Regular.woff') format('woff'),
+        url('../fonts/Ubuntu/Ubuntu-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+}
+
+.wrapper {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-main {
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 79px 0px 79px;
+}
+
+
+/* Header */
+
+.header-main__logo {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px;
+    color: white;
+}
+
+.header-main__logo:hover {
+    color:#3CB878;
+    cursor: pointer;
+}
+
+.header-main__login {
+    display: flex;
+    align-items: center;
+    padding: 17px 0px 17px 0px;
+    color: white;
+}
+
+.header-main__login-icon {
+    display: flex;
+    border-right: 1px solid white;
+    padding-right: 25px;
+    gap: 25px;
+}
+
+.header-main__login-icon svg:first-child:hover {
+    color: #3CB878;
+    cursor: pointer;
+}
+
+.header-main__login-icon svg:last-child:hover {
+    color: #3CB878;
+    cursor: pointer;
+}
+
+.header-main__login-icon svg:nth-child(2):hover {
+    color: #3CB878;
+    cursor: pointer;
+}
+
+.header-main__login-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 27px;
+}
+
+.login:hover {
+    color:#3CB878;
+    cursor: pointer;
+}
+
+.signup:hover {
+    color:#3CB878;
+    cursor: pointer;
+}
+
+
+/* Main */
+
+.container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 58px);
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+}
+
+.form__head {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__head_text {
+    display: flex;
+    align-items: center;
+    gap: 216px;
+}
+
+.form__head_text p:last-child:hover {
+    color: #01813F;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form__head_text p:first-child{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #434343;
+    padding: 31px 0px 0px 61px;
+}
+
+.form__head_text p:first-child::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-color: #3CB878;
+    position: absolute;
+    left: 0px;
+    top: 29px;
+}
+
+.form__head_text p:last-child{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #3CB878;
+    padding: 33px 59px 0px 0px;
+}
+
+.form__head_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.form__head_buttons p:first-child:hover {
+    background-color: #022263;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form__head_buttons p:first-child {
+    background-color: #305DB8;
+    border-radius: 5px;
+    padding: 17px 22px 17px 67px;
+    margin-top: 15px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    position: relative;
+}
+
+.form__head_buttons p:first-child::before {
+    content: url('../img/icons/facebook.svg');
+    position: absolute;
+    left: 17px;
+    top: 12px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    padding-right: 18px;
+}
+
+.form__head_buttons p:last-child:hover {
+    background-color: #AB1F09;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.form__head_buttons p:last-child {
+    background-color: #DF4A32;
+    border-radius: 5px;
+    padding: 17px 22px 17px 80px;
+    margin-top: 15px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    position: relative
+}
+
+.form__head_buttons p:last-child::before{
+    content: url('../img/icons/google.svg');
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+    padding-right: 7px;
+}
+
+.between-blocks  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 31px;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #848484;
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.between-blocks::before {
+    content: '';
+	position: absolute;
+    left: 58px;
+    width: 152px;
+    border: 1px solid #F2F2F2;
+}
+
+.between-blocks::after {
+    content: '';
+	position: absolute;
+    width: 152px;
+    right: 60px;
+    border: 1px solid #F2F2F2;
+}
+
+
+/* Inputs */
+
+.form__main {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 61px 0px 61px;
+}
+
+.input {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    border: 1px solid #F2F2F2;
+    border-radius: 4px;
+    padding: 15px 19px 15px 19px;
+    width: 100%;
+}
+
+.input:focus {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+}
+
+.agree-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.agree-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.agree-checkbox {  
+	display: none;
+}
+
+.agree-custom-check {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.0001);
+    border: 1px solid #F2F2F2;
+    color: #434343; 
+  }
+
+.agree-custom-check ~ p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+.terms{
+    color: #3CB878;
+  }
+
+.terms:hover {
+    color: #01813F;
+    text-decoration: underline;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+.agree-checkbox:checked ~ .agree-custom-check {
+     background-image: url('../img/icons/Vector.svg');
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+   }
+
+.form__main_create-btn {
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    background-color: rgba(60, 184, 120, 0.8);
+    padding: 16px 99px 16px 99px;
+    border-radius: 5px;
+    margin-bottom: 38px;
+}
+
+.form__main_create-btn:hover {
+    background-color: #01813F;
+    transition: .5s;
+    cursor: pointer;
+}

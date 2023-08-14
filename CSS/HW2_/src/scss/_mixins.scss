@@ -1,0 +1,5 @@
+@mixin font ($weight:700, $size:16px) {
+    font-family: "Roboto", sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}

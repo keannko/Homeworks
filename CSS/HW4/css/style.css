@@ -1,0 +1,173 @@
+@import url("./normilize.css");
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0px auto;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 94px;
+}
+
+.logo-color {
+    color: #4BCAFF;
+}
+
+.navbar {
+   padding-top: 38px;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35444F;
+    list-style: none;
+    margin: 0;
+ }
+ 
+ .navbar__link {
+     background-color: #35444F;
+     border-left: 1px solid white;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 28.13px;
+     color: #FFFFFF;
+     display: flex;
+     align-items: center;
+     padding: 26px 30px 19px 30px;  
+ }
+ 
+ .navbar__list li:last-child {
+    border-right: 1px solid white;
+ }
+
+ .navbar__link:hover {
+     background-color: #222F3A;
+ }
+
+.main__content {
+    display: flex;
+    gap: 49px;
+    margin-top: 48px;
+}
+
+.main__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 344px;
+    height: 399px;
+    border: 1px solid black;
+    list-style: none;
+}
+
+.main_menu_link {
+    display: flex;
+    padding: 26px 0;    
+    color: #485863;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 27px;
+    padding-left: 44px;
+}
+
+.main_menu_link:hover {
+    background-color: #DBDBDB;
+    color: #000000;
+    padding-left: 82px;
+}
+
+.text__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 885px;
+}
+
+.text__block__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 885px;
+    height: 529px;
+    border: 1px solid black;
+}
+
+.content__logo {
+    width: 320px;
+    height: 381px;
+}
+
+.text__block__img:hover img {
+    transform: scale(1.1);
+  }
+
+.content__logo {
+    transition: transform 0.45s;
+  }
+
+
+.text__block__text {
+    padding: 37px 0 54px 0;
+}
+
+.text {
+    padding-top: 34px;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #63696E7A;
+    padding: 20px 0px 21px;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 875px;
+    margin-left: 40px;
+}
+
+.footer__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    color: #0C1927;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #010101;
+}
+
+.footer__link:hover {
+    color: #3181A6;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #3181A6
+}

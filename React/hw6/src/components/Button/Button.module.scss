@@ -1,0 +1,14 @@
+.buttonsWrapper {
+    display: flex;
+    gap: 120px;
+}
+
+.button {
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.btnList {
+    cursor: pointer
+}

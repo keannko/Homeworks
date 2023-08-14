@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    background-color: lightgreen;
+}
+
+.yellow {
+    background-color: yellow;
+    color: red;
+}
+
+.btn-chg {
+    padding: 10px 20px;
+}

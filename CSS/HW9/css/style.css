@@ -1,0 +1,345 @@
+@import url("./normalize.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"),
+    url("../fonts/Roboto-Light.woff") format("woff"),
+    url("../fonts/Roboto-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../fonts/futura2/transfonter.org-20221030-153417/FuturaBT-Medium.woff2') format('woff2'),
+        url('../fonts/futura2/transfonter.org-20221030-153417/FuturaBT-Medium.woff') format('woff'),
+        url('../fonts/futura2/transfonter.org-20221030-153417/futura\ medium\ bt.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans2';
+    src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+        url('../fonts/OpenSans-Italic.woff') format('woff'),
+        url('../fonts/OpenSans-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+.title {
+  color: #14afca;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 40px;
+}
+
+.subtitle {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 40px;
+  color: #424f57;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/bg/bg1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 571px;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  }
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 30px;
+  width: 100vw;
+}
+
+.header__logo {
+  padding-left: 202px;
+  color: #424f57;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.header__logo_name {
+  color: #14afca;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.header__pages {
+  padding: 52px 174px 43px 0;
+}
+
+.header__pages_list {
+  display: flex;
+  gap: 60px;
+  color: #3e4c4e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20.43px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.header__main-text {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Futura Md BT';
+  font-size: 52px;
+  line-height: 75px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.first-section_text-title p:last-child {
+    padding: 15px 0 24px 0;
+}
+
+.first-section {
+  height: 438px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first-section_text-content {
+  max-width: 992px;
+  color: #424f57;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.second-section {
+  height: 715px;
+  background-image: url("../img/bg/bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 50% 85px, 100% 0, 100% 100%, 0 100%);
+}
+
+.second-section_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 125.5px;
+}
+
+.adobe {
+    width: 225px;
+    height: 99px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section_text p:first-child {
+  line-height: 75px;
+}
+
+.second-section_text p:last-child {
+  color: #ffffff;
+  line-height: 75px;
+}
+
+.third-section {
+  margin-bottom: 128.5px;
+}
+
+.third-section_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.third-section_text p:nth-child(2) {
+    padding: 10px 0 32px 0;
+}
+
+.companies {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,100px);
+    gap: 120px 65px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.third-section_photos {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.third-section_photos-description {
+  color: #424f57;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.fourth-section {
+  height: 578px;
+  background-image: url("../img/bg/bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 50% 85px, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+
+.fourth-section_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 85px;
+  position: relative;
+}
+
+.fourth-section_text p:first-child {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-top: 105px;
+}
+
+.fourth-section_text p:nth-child(2) {
+  color: #ffffff;
+  letter-spacing: 0.9px;
+  padding-top: 23px;
+}
+
+.fourth-section_text p:nth-child(3) {
+  color: #d3cccc;
+  font-family: 'Open Sans2';
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  max-width: 907px;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.fourth-section_text p:last-child {
+  font-family: 'Open Sans2';
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.45px;
+  color: white;
+  padding-left: 327px;
+  position: absolute;
+  left: 620px;
+  top: 410px;
+}
+
+.fifth-section_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 105px;
+}
+
+.fifth-section_text p:first-child {
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.fifth-section_text p:nth-child(2) {
+  letter-spacing: 00.45px;
+  padding-top: 17px;
+}
+
+.fifth-section_text p:last-child {
+  color: #424f57;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 0.75px;
+  text-align: center;
+  padding-top: 34px;
+  margin-bottom: 96px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  color: #3d3c3c;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+
+.footer_color {
+  color: #3d3c3c;
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}

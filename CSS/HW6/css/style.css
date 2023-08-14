@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/background_1.png");
+  height: 100vh;
+}
+
+.header-menu {
+    margin-top: 46px;
+}
+
+.container {
+  max-width: 1027px;
+  margin: 0px auto;
+}
+
+.header-menu__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu__logo{
+    display: flex;
+    height: 100%;
+}
+
+.logo_img {
+    width: 53px;
+    height: 47px;
+    fill: white;
+}
+
+.logo {
+    padding: 0px 0px 0px 8px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.logo :hover .logo__text {
+    color: #F26522;
+    transition: .5s;
+}
+
+.logo :hover .logo_img {
+    fill: #F26522;
+    transition: .5s;
+}
+
+.logo a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.logo__text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    margin-left: 10px;
+    gap:3px;
+}
+
+.logo__text p:first-child {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.logo__text p:last-child {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.header-menu__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-menu__email {
+    padding-bottom: 19px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.header-menu__email:hover {
+    color: #F26522;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-menu__phone {
+    align-self: flex-end;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.header-menu__phone:hover {
+    color: #F26522;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.main {
+  flex: 1 1 auto;
+  margin-top: 17px;
+}
+
+.main-menu__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px 60px;
+    justify-content: center;
+}
+
+.main-menu__column {
+    flex: 0 1 220px;
+}
+
+.item__row {
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.item__image {
+    flex: 0 0 220px;
+}
+
+.item__title {
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    transition: .5s;
+}
+
+.item__title a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.main-menu__image {
+    height: 220px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
+.hidden-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F26522;
+    width: 100%;
+    position: absolute;
+    bottom: -55px;
+    transition: .5s;
+}
+
+.price {
+    padding: 0px 0px 0px 16px;
+}
+
+.hidden-block a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.price div:first-child{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 7px 0px 8px 0px;
+}
+
+.price div:last-child {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0px 0px 10px 0px;
+}
+
+.details {
+    padding: 0px 14px 0px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 29px 14px 0px 0px;
+}
+
+.details::after {
+    content: url('../img/Vector.svg');
+    padding-left: 16px;
+ 
+}  
+
+.item__row:hover .hidden-block {
+    bottom: 6px;
+}
+
+.item__row:hover .item__title {
+    color: #F26522;
+}
+
+.footer {
+    padding: 49px 0px 15px 0px;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: center;
+
+}
+.footer__text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+}

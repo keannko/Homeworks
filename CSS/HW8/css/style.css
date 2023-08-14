@@ -1,0 +1,63 @@
+@import url('./normalize.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	margin: 0;
+	background-color: #000;
+}
+
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80vh;
+	z-index: 1;
+}
+
+p {
+	color: #ffe81f;
+}
+
+h1,h2 {
+	text-align: center;
+}
+
+.scroller {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 350%;
+	text-align: justify;
+	height: 10em;
+	width: 20em;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10em;
+	z-index: 0;
+	transform: perspective(350px) rotateX(19deg);
+	transform-origin: 70% 88%;
+	animation-iteration-count: infinite;
+}
+
+.content {
+	position: absolute;
+	top: 100%;
+	animation: scoller 30s linear infinite;
+	color: yellow;
+	line-height: 60px;
+}
+
+@keyframes scoller {
+	0% {
+		top: 100%;
+	}
+	100% {
+		top: -200%;
+	}
+}

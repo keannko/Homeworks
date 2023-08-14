@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.password-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 200px;
+}
+
+
+.input-wrapper input {
+  min-width: 120px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+.input-wrapper i {
+  position: absolute;
+  right: 25px;
+  top: 30px;
+  color: grey;
+}
+
+.btn {
+  width: 150px;
+}
+
+.passIcon {
+  cursor: pointer;
+}
+
+.info {
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}

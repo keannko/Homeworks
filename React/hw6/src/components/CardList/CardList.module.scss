@@ -1,0 +1,23 @@
+.cardListWrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.listWrapper {
+    display: grid;
+    border: 1px solid black;
+    gap: 10px;
+}
+
+.changeWrap {
+    display: flex;
+    justify-content: center;
+}
+

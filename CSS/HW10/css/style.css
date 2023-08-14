@@ -1,0 +1,170 @@
+@import url("./normalize.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.table {
+  border: 20px solid #3A4965;
+  font-family: 'Arimo';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #484848;
+  border-collapse: collapse;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bg-color-grey {
+  background-color: #E3E3E3;
+}
+
+.bg-color-light-grey {
+  background-color: #F2F2F2;
+}
+
+td {
+  border: 1px solid black;
+}
+
+tr {
+  height: 72px;
+}
+
+.table__plan {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+.table__plan-second {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.table__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.table__title1 {
+  background-color: #89C331;
+  padding: 27px 60px 18px 62px;
+}
+
+.table__title2 { 
+  font-size: 30px;
+  background-color: #F04A56;
+  padding: 24px 55px 21px 53px;
+}
+
+.table__title3 {
+  background-color: #20807C;
+  padding: 27px 69px 18px 67px;
+}
+
+.price-per-month {
+  display: flex;
+}
+
+.price-per-month__main {
+  font-weight: 700;
+  font-size: 60px;
+  align-self: center;
+  padding: 26px 0 13px 33px;
+}
+
+.price-per-month__second div:first-child {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.price-per-month__second div:last-child {
+  font-size: 18px;
+  position: relative;
+  bottom: 7px;
+  left: 3px;
+}
+
+.buttons {
+  height: 89px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+}
+
+.button-1 {
+  padding: 20px 45px 18px 46px;
+  background-color: #484848;
+  margin: 29px 58px 26px 57px;
+  border-radius: 5px;
+}
+.button-2 {
+  padding: 17px 57px 18px 57px;
+  background-color: #89C331;
+  margin: 29px 58px 26px 57px;
+  border-radius: 5px;
+}
+.button-3 {
+  padding: 18px 58px 17px 59px;
+  background-color: #F04A56;
+  margin: 29px 58px 26px 57px;
+  border-radius: 5px;
+}
+.button-4 {
+  padding: 18px 58px 18px 59px;
+  background-color: #20807C;
+  margin: 29px 58px 26px 57px;
+  border-radius: 5px;
+}
+
+
+.td-image1::before {
+  content: url('../img/icons/1.png');
+  height: 26px;
+  width: 21px;
+  padding-right: 4px;
+}
+.td-image2::before {
+  content: url('../img/icons/2.png');
+  height: 28px;
+  width: 27px;
+  padding-right: 4px;
+}
+.td-image3::before {
+  content: url('../img/icons/3.png');
+  height: 22px;
+  width: 26px;
+  padding-right: 4px;
+}
+.td-image4::before {
+  content: url('../img/icons/4.png');
+  height: 28px;
+  width: 25px;
+  padding-right: 4px;
+}
+.td-image5::before {
+  content: url('../img/icons/5.png');
+  height: 25px;
+  width: 24px;
+  padding-right: 4px;
+}
+.td-image6::before {
+  content: url('../img/icons/6.png');
+  height: 28px;
+  width: 28px;
+  padding-right: 4px;
+}

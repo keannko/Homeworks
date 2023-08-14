@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Ноутбук HP ProBook 450 G7",
+        "price": 21999,
+        "image_url": "https://picsum.photos/id/1018/200/200",
+        "article": "450G71-1231",
+        "color": "чорний"
+    },
+    {
+        "id": 2,
+        "name": "Комп'ютер HP EliteOne 801 G5",
+        "price": 39999,
+        "image_url": "https://picsum.photos/id/1025/200/200",
+        "article": "801G52-4562",
+        "color": "сріблястий"
+    },
+    {
+        "id": 3,
+        "name": "Монітор Dell UltraSharp U2818Q",
+        "price": 41999,
+        "image_url": "https://picsum.photos/id/1031/200/200",
+        "article": "U2718Q3-7823",
+        "color": "чорний"
+    },
+    {
+        "id": 4,
+        "name": "Ноутбук Lenovo IdeaPad S540",
+        "price": 18499,
+        "image_url": "https://picsum.photos/id/1040/200/200",
+        "article": "S540-01424",
+        "color": "синій"
+    },
+    {
+        "id": 5,
+        "name": "Комп'ютер Apple iMac 27-inch",
+        "price": 72999,
+        "image_url": "https://picsum.photos/id/1060/200/200",
+        "article": "iMac27-35455",
+        "color": "сріблястий"
+    },
+    {
+        "id": 6,
+        "name": "Монітор Samsung S34J550WQU",
+        "price": 17499,
+        "image_url": "https://picsum.photos/id/1069/200/200",
+        "article": "S34J550-66786",
+        "color": "чорний"
+    },
+    {
+        "id": 7,
+        "name": "Ноутбук ASUS ZenBook UX425",
+        "price": 25999,
+        "image_url": "https://picsum.photos/id/1070/200/200",
+        "article": "UX425-90177",
+        "color": "сірий"
+    },
+    {
+        "id": 8,
+        "name": "Комп'ютер Acer Aspire TC-885",
+        "price": 12999,
+        "image_url": "https://picsum.photos/id/1076/200/200",
+        "article": "TC885-23488",
+        "color": "сірий"
+    },
+    {
+        "id": 9,
+        "name": "Комп'ютер HP EliteOne 800 G5",
+        "price": 35999,
+        "image_url": "https://picsum.photos/id/1025/200/200",
+        "article": "800G5-45699",
+        "color": "сріблястий"
+    },
+    {
+        "id": 10,
+        "name": "Монітор Dell UltraSharp U2718Q",
+        "price": 11999,
+        "image_url": "https://picsum.photos/id/1031/200/200",
+        "article": "U2718Q-789110",
+        "color": "чорний"
+    }
+]

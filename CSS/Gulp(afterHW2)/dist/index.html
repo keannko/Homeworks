@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title>HW2</title>
+</head>
+<body>
+    <header class="header">
+  <ul class="header__list">
+    <li class="list__item">Home</li>
+    <li class="list__item">About Us</li>
+    <li class="list__item">Our Journal</li>
+    <li class="list__item">Projects</li>
+    <li class="list__item">news</li>
+    <li class="list__item">features</li>
+    <li class="list__item">contact</li>
+  </ul>
+<div class="burger">
+    <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+        <svg width="44" height="37" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+        <ul class="burger__list">
+            <li class="burger-item">Home</li>
+            <li class="burger-item">About Us</li>
+            <li class="burger-item">Our Journal</li>
+            <li class="burger-item">Projects</li>
+            <li class="burger-item">news</li>
+            <li class="burger-item">features</li>
+            <li class="burger-item">contact</li>
+          </ul>
+      </button>
+</div>
+</header>
+
+
+    <div class="intro"></div>
+
+    <div class="posts">
+    <div class="wrap">
+        <p class="posts__title">- our Recent posts</p>
+        <div class="posts__list">
+            <div class="list__item">
+                <img src="./images/posts/post_1.png" alt="posts">
+                <div>
+                    <p class="list__item--title">Aenean Adipiscing Etiam Vestibulum</p>
+                    <p class="list__item--about">Photography, Journal   /   9 Comments</p>
+                    <p class="list__item--content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </div>
+            <div class="list__item">
+                <img src="./images/posts/post_2.png" alt="posts">
+                <div>
+                    <p class="list__item--title">Aenean Adipiscing Etiam Vestibulum</p>
+                    <p class="list__item--about">Photography, Journal   /   9 Comments</p>
+                    <p class="list__item--content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </div>
+            <div class="list__item">
+                <img src="./images/posts/post_3.png" alt="posts">
+                <div>
+                    <p class="list__item--title">Aenean Adipiscing Etiam Vestibulum</p>
+                    <p class="list__item--about">Photography, Journal   /   9 Comments</p>
+                    <p class="list__item--content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </div>
+            <div class="list__item">
+                <img src="./images/posts/post_4.png" alt="posts">
+                <div>
+                    <p class="list__item--title">Aenean Adipiscing Etiam Vestibulum</p>
+                    <p class="list__item--about">Photography, Journal   /   9 Comments</p>
+                    <p class="list__item--content">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="inst-section">
+    <div class="wrap">
+        <div class="inst-section__title">
+            <p class="inst-section__title--prev">- Latest Instagram Shots</p>
+            <p class="inst-section__title--next">go to our instagram page -</p>
+        </div>
+        <div class="inst-section__photos">
+            <div class="inst-section__photos--photo1">
+                <img src="./images/instagram/inst_1.png" alt="inst_photo">
+            </div>
+            <div class="inst-section__photos--photo2">
+                <img src="./images/instagram/inst_2.png" alt="inst_photo">
+            </div>
+            <div class="inst-section__photos--photo3">
+                <img src="./images/instagram/inst_3.png" alt="inst_photo">
+            </div>
+            <div class="inst-section__photos--photo4">
+                <img src="./images/instagram/inst_4.png" alt="inst_photo">
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+  <div class="wrap">
+    <div class="footer-content">
+      <div class="footer-content__title">
+        <p>- get in touch with us -</p>
+      </div>
+      <div class="footer-content__about">
+        <p>
+          Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor
+          amet sed donec malesuada ullamcorper odio. <span class="about-del">Curabitur blandit tempus
+          porttitor vollisky inceptos mollisestor.</span>
+        </p>
+      </div>
+      <div class="footer-content__media">
+        <img src="./images/footer/RSS.png" alt="social_icon">
+        <img src="./images/footer/Facebook.png" alt="social_icon">
+        <img src="./images/footer/Twitter.png" alt="social_icon">
+        <img src="./images/footer/Dribbble.png" alt="social_icon">
+        <img src="./images/footer/Pinterest.png" alt="social_icon">
+      </div>
+      <div class="footer-content__contacts">
+        <p class="footerContacts">
+          <span class="address">Moonshine St. 14-05 Light City /</span>
+          <span class="phone">T. +00 (123) 456 78 90 /</span>
+          <span class="email">first.last@email.pcpom</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="./js/scripts.min.js"></script>
+</body>
+</html>
